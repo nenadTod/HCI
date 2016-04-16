@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="databaseModelStoreContainer" CdmEntityContainer="databaseEntities">
+    <EntitySetMapping Name="Maps">
+      <EntityTypeMapping TypeName="databaseModel.Maps">
+        <MappingFragment StoreEntitySet="Maps">
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceLocation">
+      <EntityTypeMapping TypeName="databaseModel.ResourceLocation">
+        <MappingFragment StoreEntitySet="ResourceLocation">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="species_id" ColumnName="species_id" />
+          <ScalarProperty Name="maps_id" ColumnName="maps_id" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tag">
+      <EntityTypeMapping TypeName="databaseModel.Tag">
+        <MappingFragment StoreEntitySet="Tag">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="color" ColumnName="color" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tag_Species">
+      <EntityTypeMapping TypeName="databaseModel.Tag_Species">
+        <MappingFragment StoreEntitySet="Tag_Species">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sp_id" ColumnName="sp_id" />
+          <ScalarProperty Name="tag_id" ColumnName="tag_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type">
+      <EntityTypeMapping TypeName="databaseModel.Type">
+        <MappingFragment StoreEntitySet="Type">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Species">
+      <EntityTypeMapping TypeName="databaseModel.Species">
+        <MappingFragment StoreEntitySet="Species">
+          <ScalarProperty Name="type_id" ColumnName="type_id" />
+          <ScalarProperty Name="dd" ColumnName="dd" />
+          <ScalarProperty Name="ar" ColumnName="ar" />
+          <ScalarProperty Name="ts" ColumnName="ts" />
+          <ScalarProperty Name="ppa" ColumnName="ppa" />
+          <ScalarProperty Name="dth" ColumnName="dth" />
+          <ScalarProperty Name="IUCN" ColumnName="IUCN" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

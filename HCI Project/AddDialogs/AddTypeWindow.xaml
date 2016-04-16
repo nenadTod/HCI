@@ -1,0 +1,24 @@
+﻿<Window x:Class="HCI_Project.TypeWindow"
+        WindowStyle="ToolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tip" Height="468.333" Width="247.667" ResizeMode="NoResize"
+        WindowStartupLocation ="CenterScreen">
+    <Grid Background="#ECF0F1">
+        <Image x:Name="imgType" Source="..\Images\pandaLogo.jpg" Margin="0,10,0,0" HorizontalAlignment="Center" Width="147" Height="135" VerticalAlignment="Top"/>
+        <Label x:Name="lblId" Content="*Id:" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" Width="70" FontSize="14" RenderTransformOrigin="0.486,0.538"/>
+        <Button Content="*Add picture" HorizontalAlignment="Left" Height="21" Margin="94,145,0,0" VerticalAlignment="Top" Width="93" Click="AddPictureButtonClick"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="26" Margin="74,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126" TextChanged="IDTextChanged"/>
+        <Label Content="*Name:" HorizontalAlignment="Left" Height="26" Margin="10,226,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="74,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="127" TextChanged="NameTextChanged"/>
+        <Label Content="Desc:" HorizontalAlignment="Left" Margin="10,270,0,0" VerticalAlignment="Top" Width="70" FontSize="14"/>
+        <TextBox x:Name="txtDesc" Height="81" Margin="74,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="127"/>
+        <Button x:Name="btnAdd" Content="Add" IsEnabled="False" HorizontalAlignment="Left" Margin="136,391,0,0" Width="76" Height="35" VerticalAlignment="Top" FontSize="14" Click="AddButtonClick"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="55,391,0,0" Width="76" Height="35" VerticalAlignment="Top" FontSize="14" Click="CancelButtonClick"/>
+
+        <Image x:Name="imgImgWarning" Source="..\Images\warning.ico" Height="24" Margin="205,145,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="24" ToolTip="You must add picture!"/>
+        <Image x:Name="imgIdWarning" Source="..\Images\warning.ico" Height="24" Margin="205,192,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="24" Visibility="Hidden"/>
+        <Image x:Name="imgNameWarning" Source="..\Images\warning.ico" Height="24" Margin="205,228,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="24" Visibility="Hidden"/>
+        <Label x:Name="lblWarning" Content="Fields containing * must be filled correctly." Foreground="#D91E18" HorizontalAlignment="Left" Margin="0,365,0,0" VerticalAlignment="Top" Width="237"/>
+    </Grid>
+</Window>

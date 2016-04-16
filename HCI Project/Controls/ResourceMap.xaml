@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="HCI_Project.Controls.ResourceMap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:map="clr-namespace:MapControl;assembly=MapControl.WPF"
+             d:DesignHeight="300" d:DesignWidth="500">
+
+    <UserControl.Resources>
+        <!--
+        <map:BingMapsTileLayer x:Key="BingHybrid" SourceName="Bing Maps Hybrid"
+                               Description="© [Microsoft Corporation](http://www.bing.com/maps/)"
+                               Mode="AerialWithLabels" MaxZoomLevel="19" Foreground="White" Background="Black"/>
+        -->
+        <map:TileLayer x:Key="Landscape" SourceName="Thunderforest Landscape"
+                       Description="Maps © [Thunderforest](http://www.thunderforest.com/), Data © [OpenStreetMap Contributors](http://www.openstreetmap.org/copyright)"
+                       TileSource="http://{c}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png"/>
+
+        <Style TargetType="FrameworkElement" x:Key="VisibleAnimation">
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Setter Property="Opacity" Value="0"/>
+            <Style.Triggers>
+                <Trigger Property="Visibility" Value="Visible">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="Opacity"
+                             From="0.0" To="1.0" Duration="0:0:0.5"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid >
+        <Grid Name="Filter" Style="{StaticResource VisibleAnimation}" Panel.ZIndex="1" Background="#ECF0F1" Height="36" Width="295" Margin="5,2,133,264" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5">
+            <TextBox Name="FilterText" Width="110"  HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Margin="2,2,0,0"/>
+            <ComboBox Name="StatusFilterChoice" Width="110"  HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Margin="2,2,0,0" Visibility="Collapsed">
+                <ComboBoxItem>Critically Endangered</ComboBoxItem>
+                <ComboBoxItem IsSelected="True">Endangered</ComboBoxItem>
+                <ComboBoxItem>Vulnerable</ComboBoxItem>
+                <ComboBoxItem>Dependent on Conservation of Habitat</ComboBoxItem>
+                <ComboBoxItem>Near Risk</ComboBoxItem>
+                <ComboBoxItem>Lowest Risk</ComboBoxItem>
+            </ComboBox>
+            <ComboBox Name="UCNFilterChoice" Width="110"  HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Margin="2,2,0,0" Visibility="Collapsed">
+                <ComboBoxItem IsSelected="True" Content="On the list"/>
+                <ComboBoxItem Content="Not on the list"/>
+            </ComboBox>
+            <ComboBox Name="FilterType" Width="105" Height="32" FontSize="11.5" RenderTransformOrigin="0.219,-2.25"  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="115,2,0,0" SelectionChanged="FilterTypeChanged">
+                <ComboBoxItem HorizontalAlignment="Center" IsSelected="True" Content="-"/>
+                <ComboBoxItem Content="Id"/>
+                <ComboBoxItem Content="Name"/>
+                <ComboBoxItem Content="Status"/>
+                <ComboBoxItem FontSize="11.5" Content="On IUCN Red List"/>
+                <ComboBoxItem Content="Tag"/>
+            </ComboBox>
+            <!-- Primeni filter -->
+            <Button Click="ApplyButtonClick" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="261,2,0,0">Ap</Button>
+            <!-- Dugme za brisanje aktiviranih filtera -->
+            <Button Click="RemoveFilerButtonClick" Width="32" Height="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="226,2,0,0">Rm</Button>
+        </Grid>
+        <Grid Panel.ZIndex="0">
+            <map:Map x:Name="map" ZoomLevel="4" MinZoomLevel="4" MaxZoomLevel="15" Center="{Binding MapCenter}"
+                 TileLayer="{StaticResource Landscape}" AllowDrop="True" Drop="MapDrop" DragOver="MapDragOver"/>
+        </Grid>
+    </Grid>
+
+
+
+</UserControl>

@@ -1,0 +1,172 @@
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\HCI Project.exe.config
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\HCI Project.exe
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\HCI Project.pdb
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\EntityFramework.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\FileDb.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\FileDbCache.WPF.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\ImageFileCache.WPF.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\MapControl.WPF.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\System.Data.SQLite.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\EntityFramework.xml
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\FileDb.xml
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\System.Data.SQLite.xml
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI Project.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\AddDialogs\AddSpeciesWindow.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\AddDialogs\AddTypeWindow.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\AddDialogs\TagDialog.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\Controls\ResourceMap.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\EditDialogs\EditSpecies.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\EditDialogs\EditTag.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\EditDialogs\EditType.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\MainWindow.baml
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\AddDialogs\AddSpeciesWindow.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\AddDialogs\AddTypeWindow.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\AddDialogs\TagDialog.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\Controls\ResourceMap.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\EditDialogs\EditSpecies.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\EditDialogs\EditTag.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\EditDialogs\EditType.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\MainWindow.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\App.g.cs
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI Project_MarkupCompile.cache
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI Project.g.resources
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI_Project.Properties.Resources.resources
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI Project.csproj.GenerateResource.Cache
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI Project.exe
+C:\Users\Eugene\svn\HCI Project\HCI Project\obj\Debug\HCI Project.pdb
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\HCI Project.exe.config
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI Project.exe
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI Project.pdb
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\HCI Project.exe
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\HCI Project.pdb
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\FileDb.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\FileDbCache.WPF.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\ImageFileCache.WPF.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\MapControl.WPF.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.xml
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\FileDb.xml
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.xml
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI Project.csprojResolveAssemblyReference.cache
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddSpeciesWindow.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddTypeWindow.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\TagDialog.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\Controls\ResourceMap.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditSpecies.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditTag.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditType.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\MainWindow.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddSpeciesWindow.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddTypeWindow.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\TagDialog.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\Controls\ResourceMap.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditSpecies.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditTag.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditType.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\MainWindow.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\App.g.cs
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI Project_MarkupCompile.cache
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI Project.g.resources
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI_Project.Properties.Resources.resources
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HCI Project.csproj.GenerateResource.Cache
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HistoryWindow.baml
+C:\Users\Eugene\git\hci_ftn\HCI Project\obj\Debug\HistoryWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\HCI Project.exe.config
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\HCI Project.exe
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\HCI Project.pdb
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\FileDb.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\FileDbCache.WPF.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\ImageFileCache.WPF.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\MapControl.WPF.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\FileDb.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\System.Data.SQLite.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI Project.csprojResolveAssemblyReference.cache
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddSpeciesWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddTypeWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\TagDialog.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\Controls\ResourceMap.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditSpecies.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditTag.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditType.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HistoryWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\MainWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddSpeciesWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\AddTypeWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\AddDialogs\TagDialog.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\Controls\ResourceMap.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditSpecies.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditTag.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\EditDialogs\EditType.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HistoryWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\MainWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\App.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI Project_MarkupCompile.cache
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI Project.g.resources
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI_Project.Properties.Resources.resources
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI Project.csproj.GenerateResource.Cache
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI Project.exe
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Debug\HCI Project.pdb

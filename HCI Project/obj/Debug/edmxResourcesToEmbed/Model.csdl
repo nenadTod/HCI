@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="databaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Maps">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="ResourceLocation" Relationship="Self.FK_ResourceLocation_0_0" FromRole="Maps" ToRole="ResourceLocation" />
+  </EntityType>
+  <EntityType Name="ResourceLocation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="species_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="maps_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="latitude" Type="Double" Nullable="false" />
+    <Property Name="longitude" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Maps" Relationship="Self.FK_ResourceLocation_0_0" FromRole="ResourceLocation" ToRole="Maps" />
+    <NavigationProperty Name="Species" Relationship="databaseModel.FK_ResourceLocation_1_0" FromRole="ResourceLocation" ToRole="Species" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="color" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tag_Species" Relationship="Self.FK_Tag_Species_0_0" FromRole="Tag" ToRole="Tag_Species" />
+  </EntityType>
+  <EntityType Name="Tag_Species">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sp_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="tag_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tag" Relationship="Self.FK_Tag_Species_0_0" FromRole="Tag_Species" ToRole="Tag" />
+    <NavigationProperty Name="Species" Relationship="databaseModel.FK_Tag_Species_1_0" FromRole="Tag_Species" ToRole="Species" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="icon" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="desc" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Species" Relationship="databaseModel.FK_Species_0_0" FromRole="Type" ToRole="Species" />
+  </EntityType>
+  <Association Name="FK_ResourceLocation_0_0">
+    <End Role="Maps" Type="Self.Maps" Multiplicity="1" />
+    <End Role="ResourceLocation" Type="Self.ResourceLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Maps">
+        <PropertyRef Name="name" />
+      </Principal>
+      <Dependent Role="ResourceLocation">
+        <PropertyRef Name="maps_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tag_Species_0_0">
+    <End Role="Tag" Type="Self.Tag" Multiplicity="0..1" />
+    <End Role="Tag_Species" Type="Self.Tag_Species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tag">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tag_Species">
+        <PropertyRef Name="tag_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="databaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Maps" EntityType="Self.Maps" />
+    <EntitySet Name="ResourceLocation" EntityType="Self.ResourceLocation" />
+    <EntitySet Name="Tag" EntityType="Self.Tag" />
+    <EntitySet Name="Tag_Species" EntityType="Self.Tag_Species" />
+    <EntitySet Name="Type" EntityType="Self.Type" />
+    <AssociationSet Name="FK_ResourceLocation_0_0" Association="Self.FK_ResourceLocation_0_0">
+      <End Role="Maps" EntitySet="Maps" />
+      <End Role="ResourceLocation" EntitySet="ResourceLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tag_Species_0_0" Association="Self.FK_Tag_Species_0_0">
+      <End Role="Tag" EntitySet="Tag" />
+      <End Role="Tag_Species" EntitySet="Tag_Species" />
+    </AssociationSet>
+    <EntitySet Name="Species" EntityType="databaseModel.Species" />
+    <AssociationSet Name="FK_ResourceLocation_1_0" Association="databaseModel.FK_ResourceLocation_1_0">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="ResourceLocation" EntitySet="ResourceLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Species_0_0" Association="databaseModel.FK_Species_0_0">
+      <End Role="Type" EntitySet="Type" />
+      <End Role="Species" EntitySet="Species" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tag_Species_1_0" Association="databaseModel.FK_Tag_Species_1_0">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="Tag_Species" EntitySet="Tag_Species" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Species">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="status" Type="Int64" Nullable="false" />
+    <Property Name="icon" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="IUCN" Type="Int64" />
+    <Property Name="dth" Type="Int64" />
+    <Property Name="ppa" Type="Int64" />
+    <Property Name="ts" Type="Int64" />
+    <Property Name="ar" Type="Int64" />
+    <Property Name="dd" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <Property Name="type_id" Type="String" MaxLength="2147483647" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ResourceLocation" Relationship="databaseModel.FK_ResourceLocation_1_0" FromRole="Species" ToRole="ResourceLocation" />
+    <NavigationProperty Name="Type" Relationship="databaseModel.FK_Species_0_0" FromRole="Species" ToRole="Type" />
+    <NavigationProperty Name="Tag_Species" Relationship="databaseModel.FK_Tag_Species_1_0" FromRole="Species" ToRole="Tag_Species" />
+  </EntityType>
+  <Association Name="FK_ResourceLocation_1_0">
+    <End Type="databaseModel.Species" Role="Species" Multiplicity="1" />
+    <End Type="databaseModel.ResourceLocation" Role="ResourceLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ResourceLocation">
+        <PropertyRef Name="species_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Species_0_0">
+    <End Type="databaseModel.Type" Role="Type" Multiplicity="0..1" />
+    <End Type="databaseModel.Species" Role="Species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Species">
+        <PropertyRef Name="type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tag_Species_1_0">
+    <End Type="databaseModel.Species" Role="Species" Multiplicity="0..1" />
+    <End Type="databaseModel.Tag_Species" Role="Tag_Species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tag_Species">
+        <PropertyRef Name="sp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

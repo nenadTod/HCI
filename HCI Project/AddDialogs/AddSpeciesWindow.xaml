@@ -1,0 +1,63 @@
+﻿<Window x:Class="HCI_Project.SpeciesDialog"
+        WindowStyle="ToolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Specie" Height="583" Width="650" ResizeMode="NoResize"
+        WindowStartupLocation ="CenterScreen">
+    <Grid Background="#ECF0F1">
+        <Label Content="*ID:" HorizontalAlignment="Left" Margin="23,22,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="*Name:" HorizontalAlignment="Left" Margin="23,51,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="Description:" HorizontalAlignment="Left" Margin="23,337,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="*Type:" HorizontalAlignment="Left" Margin="23,84,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="Endargement Status:" HorizontalAlignment="Left" Margin="23,161,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="Anual Revenue:" HorizontalAlignment="Left" Margin="23,479,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="Tourist Status:" Height="26" HorizontalAlignment="Left" Margin="23,448,0,0" VerticalAlignment="Top" FontSize="14" />
+        
+        <Image x:Name="imgSpecies" Source="..\Images\pandaLogo.jpg" Margin="423,0,30,334" OpacityMask="Black"/>
+        <Image x:Name="imgIdWarning" Source="..\Images\warning.ico" Width="24" Height="24" Margin="338,22,0,0" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Image x:Name="imgNameWarning" Source="..\Images\warning.ico" Width="24" Height="24" Margin="338,55,0,0" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Image x:Name="imgTypeWarning" Source="..\Images\warning.ico" Width="24" Height="24" Margin="338,86,0,0" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Image x:Name="imgRevenueWarning" Source="..\Images\warning.ico" Width="24" Height="24" Margin="338,481,0,0" Visibility="Hidden" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="26" Margin="166,22,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="167" FontSize="14" TextChanged="txtID_TextChanged"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="166,53,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="167" FontSize="14" TextChanged="txtName_TextChanged" />
+        <ComboBox x:Name="cmbType" HorizontalAlignment="Left" Height="26" Margin="166,84,0,0" VerticalAlignment="Top" Width="167" FontSize="14" SelectionChanged="cmbType_SelectionChanged"/>
+        <CheckBox x:Name="chckIUCN" Content="Placed on IUCN Red List" HorizontalAlignment="Left" Margin="23,143,0,0" VerticalAlignment="Top" FontSize="14" />
+        <ComboBox x:Name="cmbEndangered" HorizontalAlignment="Left" Height="26" Margin="166,161,0,0" VerticalAlignment="Top" Width="167" FontSize="14">
+            <ComboBoxItem>Critically Endangered</ComboBoxItem>
+            <ComboBoxItem IsSelected="True">Endangered</ComboBoxItem>
+            <ComboBoxItem>Vulnerable</ComboBoxItem>
+            <ComboBoxItem>Dependent on Conservation of Habitat</ComboBoxItem>
+            <ComboBoxItem>Near Risk</ComboBoxItem>
+            <ComboBoxItem>Lowest Risk</ComboBoxItem>
+        </ComboBox>
+        <CheckBox x:Name="chckArea" Content="Lives in Populated Area" HorizontalAlignment="Left" Margin="23,215,0,0" VerticalAlignment="Top" FontSize="14" />
+        <CheckBox x:Name="chckDanger" Content="Dangerous to people" HorizontalAlignment="Left" Margin="23,238,0,0" VerticalAlignment="Top" FontSize="14" />
+        <DatePicker x:Name="date" Height="26" HorizontalAlignment="Left" Margin="166,281,0,0" VerticalAlignment="Top" Width="167" />
+        <TextBox x:Name="txtDesc" HorizontalAlignment="Left" Height="85" Margin="166,337,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="167" FontSize="14" />
+
+        <ComboBox x:Name="cmbTourist" Height="26" Margin="166,448,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="167" FontSize="14">
+            <ComboBoxItem IsSelected="True">-</ComboBoxItem>
+            <ComboBoxItem>Isolated</ComboBoxItem>
+            <ComboBoxItem>Partially Habited</ComboBoxItem>
+            <ComboBoxItem>Habited</ComboBoxItem>
+        </ComboBox>
+
+        <TextBox x:Name="txtRevenue" Height="26" Margin="166,479,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="167" FontSize="14"  HorizontalAlignment="Left" TextChanged="txtRevenue_TextChanged">
+            <TextBox.ToolTip>In dollars!</TextBox.ToolTip>
+        </TextBox>
+
+        <Button Content="Change picture" Margin="499,190,30,0" Height="23" VerticalAlignment="Top" Click="ChangePicture_Click"/>
+
+        <ListBox x:Name="listTag" Height="82" Margin="467,281,30,0" VerticalAlignment="Top" IsEnabled="False" SelectionMode="Multiple">
+        </ListBox>
+
+        <Button x:Name="btnAdd" Content="Add" Margin="499,482,30,21" FontSize="16" Click="Button_Click" IsEnabled="False"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="380,482,0,21" Width="114" FontSize="16" Click="Cancel_Click"/>
+
+        <Label Content="Date of Discovery:" HorizontalAlignment="Left" Margin="23,281,0,0" VerticalAlignment="Top" FontSize="14" />
+        <Label Content="Tag:" HorizontalAlignment="Left" Height="29" Margin="423,281,0,0" FontSize="14"  VerticalAlignment="Top" Width="58"/>
+        <Label x:Name="lblWarning" Content="All fields that contain * must be filled correctly." HorizontalAlignment="Left" Margin="338,448,0,0" VerticalAlignment="Top" FontSize="14" Foreground ="#D91E18"/>
+
+    </Grid>
+</Window>

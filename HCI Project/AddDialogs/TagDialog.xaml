@@ -1,0 +1,28 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="HCI_Project.AddDialogs.TagDialog"
+        Title="TagDialog" Height="322.195" Width="297.395" ResizeMode="NoResize"
+        WindowStyle="ToolWindow"
+        WindowStartupLocation ="CenterScreen">
+    <Grid Background="#ECF0F1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="52*"/>
+            <ColumnDefinition Width="239*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Color:" HorizontalAlignment="Left" Margin="7,176,0,0" VerticalAlignment="Top"/>
+        <Label Content="*Id:" HorizontalAlignment="Left" Margin="7,27,0,0" VerticalAlignment="Top"/>
+        <Label Content="Desc:" HorizontalAlignment="Left" Margin="7,66,0,0" VerticalAlignment="Top"/>
+
+        <Image x:Name="imgIdWarning" Source="..\images\warning.ico" Height="24" Width="24" Margin="202,29,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Visibility="Hidden" Grid.Column="1"/>
+
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="26" Margin="1,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="196" TextChanged="IDTextChanged" Grid.Column="1"/>
+        <TextBox x:Name="txtDesc" HorizontalAlignment="Left" Height="98" Margin="1,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197" Grid.Column="1"/>
+        <xctk:ColorPicker x:Name="clrPicker" HorizontalAlignment="Left" Margin="1,178,0,0" VerticalAlignment="Top" Width="197" Grid.Column="1"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="104,243,0,0" VerticalAlignment="Top" Width="94" Height="29" FontSize="14" IsEnabled="False" Click="AddButtonClick" Grid.Column="1"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="1,243,0,0" VerticalAlignment="Top" Width="95" Height="29" FontSize="14" Grid.Column="1" Click="CancelButtonClick"/>
+
+        <Label x:Name="lblWarning" Content="All fields containing * must be filled!" HorizontalAlignment="Left" Margin="50,212,0,0" VerticalAlignment="Top" Foreground ="#D91E18" Width="203" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>

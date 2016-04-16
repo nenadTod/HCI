@@ -1,0 +1,34 @@
+﻿<Window x:Class="HCI_Project.EditDialogs.EditTag"
+        WindowStyle="ToolWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wpfx="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	    xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero2"
+
+        Title="EditTag" Height="290" Width="400" ResizeMode="NoResize">
+
+    <Grid x:Name="LayoutRoot" Margin="0,0,-6,1" Background="#ECF0F1">
+        <ListView x:Name="lista" MouseDoubleClick="ListMouseDoubleClick" Background="#ECF0F1" BorderBrush="White" BorderThickness="0" Margin="0,0,10,33" HorizontalAlignment="Center" Width="390">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Width="30" Header="Color"  >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Grid Background="{Binding TagColor}" Width="100" Height="20"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Width="130" Header="ID" DisplayMemberBinding="{Binding ID}" />
+                    <GridViewColumn Width="130" Header="Description" DisplayMemberBinding="{Binding Desc}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name="btn_ok" Content="Ok" HorizontalAlignment="Left" Margin="132,217,0,0" VerticalAlignment="Top" Width="75" Height="24" RenderTransformOrigin="0.379,0.567" Click="ButtonOkClick"/>
+        <Button Name="btn_remove" Content="Remove" HorizontalAlignment="Left" Margin="292,217,0,0" VerticalAlignment="Top" Width="75" Height="24" RenderTransformOrigin="0.379,0.567" Click="ButtonRemoveClick"/>
+        <wpfx:ColorPicker Name="ColorPicker1" Height="30" Visibility="Hidden" DisplayColorAndName="True" Margin="68,54,19,90" Grid.ColumnSpan="2"/>
+        <TextBox Name="searchBox" HorizontalAlignment="Left" Height="23" Margin="7,217,0,0" TextWrapping="Wrap" Text="Search..." VerticalAlignment="Top" Width="120" TextChanged="SearchTextChanged" GotFocus="SearchGotFocus"/>
+        <Button x:Name="btn_add" Content="Add" HorizontalAlignment="Left" Margin="212,217,0,0" VerticalAlignment="Top" Width="75" Height="24" RenderTransformOrigin="0.379,0.567" Click="ButtonAddClick"/>
+    </Grid>
+</Window>

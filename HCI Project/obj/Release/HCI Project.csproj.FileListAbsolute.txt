@@ -1,0 +1,57 @@
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\HCI Project.exe.config
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\HCI Project.exe
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\HCI Project.pdb
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\EntityFramework.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\FileDb.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\FileDbCache.WPF.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\ImageFileCache.WPF.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\MapControl.WPF.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\System.Data.SQLite.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\Xceed.Wpf.AvalonDock.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\Xceed.Wpf.DataGrid.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\Xceed.Wpf.Toolkit.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\EntityFramework.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\FileDb.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\System.Data.SQLite.xml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\bin\Release\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\AddDialogs\AddSpeciesWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\AddDialogs\AddTypeWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\AddDialogs\TagDialog.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\Controls\ResourceMap.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\EditDialogs\EditSpecies.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\EditDialogs\EditTag.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\EditDialogs\EditType.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HistoryWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\MainWindow.baml
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\AddDialogs\AddSpeciesWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\AddDialogs\AddTypeWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\AddDialogs\TagDialog.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\Controls\ResourceMap.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\EditDialogs\EditSpecies.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\EditDialogs\EditTag.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\EditDialogs\EditType.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HistoryWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\MainWindow.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\App.g.cs
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HCI Project_MarkupCompile.cache
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HCI Project.g.resources
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HCI_Project.Properties.Resources.resources
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HCI Project.csproj.GenerateResource.Cache
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HCI Project.exe
+C:\Users\dimitrije\git\hci_ftn\HCI Project\obj\Release\HCI Project.pdb

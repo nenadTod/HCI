@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="databaseModel.Store" Provider="System.Data.SQLite.EF6" ProviderManifestToken="data source=&quot;C:\Users\dimitrije\svn\hciftn\HCI Project\HCI Project\database.db&quot;" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Maps">
+    <Key>
+      <PropertyRef Name="name" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceLocation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="species_id" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="maps_id" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="latitude" Type="real" Nullable="false" />
+    <Property Name="longitude" Type="real" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Species">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="desc" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="status" Type="integer" Nullable="false" />
+    <Property Name="icon" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="IUCN" Type="integer" />
+    <Property Name="dth" Type="integer" />
+    <Property Name="ppa" Type="integer" />
+    <Property Name="ts" Type="integer" />
+    <Property Name="ar" Type="integer" />
+    <Property Name="dd" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="type_id" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Tag">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="color" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="desc" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Tag_Species">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="integer" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sp_id" Type="nvarchar" MaxLength="2147483647" />
+    <Property Name="tag_id" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <EntityType Name="Type">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="icon" Type="nvarchar" MaxLength="2147483647" Nullable="false" />
+    <Property Name="desc" Type="nvarchar" MaxLength="2147483647" />
+  </EntityType>
+  <Association Name="FK_ResourceLocation_0_0">
+    <End Role="Maps" Type="Self.Maps" Multiplicity="1" />
+    <End Role="ResourceLocation" Type="Self.ResourceLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Maps">
+        <PropertyRef Name="name" />
+      </Principal>
+      <Dependent Role="ResourceLocation">
+        <PropertyRef Name="maps_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ResourceLocation_1_0">
+    <End Role="Species" Type="Self.Species" Multiplicity="1" />
+    <End Role="ResourceLocation" Type="Self.ResourceLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ResourceLocation">
+        <PropertyRef Name="species_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Species_0_0">
+    <End Role="Type" Type="Self.Type" Multiplicity="0..1" />
+    <End Role="Species" Type="Self.Species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Type">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Species">
+        <PropertyRef Name="type_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tag_Species_0_0">
+    <End Role="Tag" Type="Self.Tag" Multiplicity="0..1" />
+    <End Role="Tag_Species" Type="Self.Tag_Species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tag">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tag_Species">
+        <PropertyRef Name="tag_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tag_Species_1_0">
+    <End Role="Species" Type="Self.Species" Multiplicity="0..1" />
+    <End Role="Tag_Species" Type="Self.Tag_Species" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Species">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Tag_Species">
+        <PropertyRef Name="sp_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="databaseModelStoreContainer">
+    <EntitySet Name="Maps" EntityType="Self.Maps" store:Type="Tables" />
+    <EntitySet Name="ResourceLocation" EntityType="Self.ResourceLocation" store:Type="Tables" />
+    <EntitySet Name="Species" EntityType="Self.Species" store:Type="Tables" />
+    <EntitySet Name="Tag" EntityType="Self.Tag" store:Type="Tables" />
+    <EntitySet Name="Tag_Species" EntityType="Self.Tag_Species" store:Type="Tables" />
+    <EntitySet Name="Type" EntityType="Self.Type" store:Type="Tables" />
+    <AssociationSet Name="FK_ResourceLocation_0_0" Association="Self.FK_ResourceLocation_0_0">
+      <End Role="Maps" EntitySet="Maps" />
+      <End Role="ResourceLocation" EntitySet="ResourceLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ResourceLocation_1_0" Association="Self.FK_ResourceLocation_1_0">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="ResourceLocation" EntitySet="ResourceLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Species_0_0" Association="Self.FK_Species_0_0">
+      <End Role="Type" EntitySet="Type" />
+      <End Role="Species" EntitySet="Species" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tag_Species_0_0" Association="Self.FK_Tag_Species_0_0">
+      <End Role="Tag" EntitySet="Tag" />
+      <End Role="Tag_Species" EntitySet="Tag_Species" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tag_Species_1_0" Association="Self.FK_Tag_Species_1_0">
+      <End Role="Species" EntitySet="Species" />
+      <End Role="Tag_Species" EntitySet="Tag_Species" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
